@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-background;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.text-h1 {
+    @apply text-6xl font-display leading-heading-extra;
 }
 
-* {
-  box-sizing: border-box;
+.text-h2 {
+    @apply text-4xl font-display leading-heading;
 }
