@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Image from "next/image";
+
+import ListPlatforms from "../components/podcast/ListPlatforms";
 
 export default function Home() {
   return (
@@ -15,9 +18,148 @@ export default function Home() {
             <h1 className="text-h1 mb-5">
               Rozhovory s ľuďmi, ktorí dokázali, že sa to DÁ.
             </h1>
-            <p className="text-3xl font-light leading-40">
+            <p className="text-3xl font-light leading-40 mb-20">
               Inšpirácie a praktické návody, ako obyčajní ľudia dokážu
               neobyčajné veci.
+            </p>
+            <ListPlatforms />
+          </div>
+          <div className="pl-20">
+            <Image
+              src="/images/cover-photo.jpg"
+              alt="Logo Dasato Svet podla Gabiky"
+              width={533}
+              height={658}
+            />
+          </div>
+        </div>
+
+        <div id="o-projekte" className="grid grid-cols-2 mt-28">
+          <div>
+            <Image
+              src="/images/o-projekte.jpg"
+              alt=""
+              width={573}
+              height={457}
+            />
+          </div>
+          <div className="pl-20 flex flex-col justify-center">
+            <h2 className="text-h2">O projekte DÁSATO</h2>
+            <p className="my-6">
+              Relácia prináša rozhovory s ľuďmi, ktorí dokázali že sa DÁ, to, čo
+              sa zvyčajne považuje za nemožné, alebo len veľmi ťažké. Vypočuj si
+              ich rozprávanie a aj ty môžeš byť ďalším kto dokáže že DÁSATO.
+            </p>
+            <p className="mb-6">
+              Cieľom DÁSATO je{" "}
+              <strong>prekonávať bariéry a inšpirovať ľudí</strong> ku
+              preberaniu zodpovednosti a ku aktivite.
+            </p>
+            <p>
+              Relácia praktickým spôsobom predstavuje{" "}
+              <strong>AKO SA VECI DAJÚ realizovať</strong> a nevyhýba sa ani
+              finančným záležitostiam, práve naopak transparentne pomenúva aj
+              túto časť realizácie zmien.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green">
+        <div className="container py-20">
+          <div className="grid grid-cols-3">
+            <div className="text-h2 text-white">
+              20 rozhovorov
+              <br />
+              ročne
+            </div>
+            <div className="text-h2 text-white">
+              Významní
+              <br />
+              hostia
+            </div>
+            <div className="text-h2 text-white">
+              Highlight
+              <br />
+              projektu
+            </div>
+          </div>
+        </div>
+        <Image
+          src={`/images/highlights.svg`}
+          width={1542}
+          height={70}
+          className="mx-auto"
+        />
+      </div>
+      <div className="container py-20">
+        <div className="w-2/3">
+          <h2 className="text-h2">Kto sú hostia Podcastu</h2>
+          <p className="mt-6 mb-12">
+            Relácia DÁSATO prináša ročne dvasiatku rozhovorov so zaujímavými
+            ľuďmi najmä z neziskových (pomáhajúcich) organizácií, ale aj
+            inšpiratívnych jednotlivcov mimo nezisku.
+          </p>
+          <h2 className="text-h2">Pre koho je podcast určený?</h2>
+          <p className="mt-6 mb-12">
+            Ľudia pracujúci vo firmách, alebo vo verejnej správe, ktorí majú
+            záujem o inšpiratívne a pozitívne príbehy. Verejnosť, ktorá nepozná
+            prácu neziskových organizácií, nevie ako fungujú, čo vlastne robia,
+            ako sú financované. Tiež ľudia z nezisku, ktorí sa zaujímajú o iné
+            podobné inšpiratívne projekty (nielen) z ich sektora.
+          </p>
+          <h2 className="text-h2">Ako nájsť financie na svoj projekt?</h2>
+          <p className="mt-6 mb-28">
+            Ľudia pracujúci vo firmách, alebo vo verejnej správe, ktorí majú
+            záujem o inšpiratívne a pozitívne príbehy. Verejnosť, ktorá nepozná
+            prácu neziskových organizácií, nevie ako fungujú, čo vlastne robia,
+            ako sú financované. Tiež ľudia z nezisku, ktorí sa zaujímajú o iné
+            podobné inšpiratívne projekty (nielen) z ich sektora.
+          </p>
+          <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
+          <ListPlatforms />
+        </div>
+
+        <div id="o-gabike" className="grid grid-cols-2 mt-28">
+          <div className="flex flex-col justify-center">
+            <Image
+              src="/images/gabika-DASATO.jpg"
+              alt=""
+              width={533}
+              height={658}
+            />
+          </div>
+          <div className="pl-20">
+            <h2 className="text-h2">O Gabike Zubríkovej</h2>
+            <p className="my-6">
+              Viac ako 20 rokov pracujem ako finančníčka v neziskovom svete,
+              poznám ľudí z pomáhajúceho sektora a poznám výsledky roboty
+              mnohých aktivistov a výnimočných ľudí pôsobiacich aj mimo
+              neziskových organizácií. Vidím, že sa veci dajú a chcem toto
+              poznanie priniesť aj Vám. V relácii sa venujem aj praktickým
+              návodom, ako sa veci dali, vrátane financovania a otázok spojených
+              s financiami a ich získaním.
+            </p>
+            <p className="mb-6">
+              Aktuálne pracujem ako finančná riaditeľka pre IPčko (psychologická
+              poradňa) a finančná riaditeľka pre Nadáciu pre deti Slovenska,
+              tiež zodpovedám za financie Nadácie Tesco. Pokúšala som sa aj
+              o prechod do firemného sveta, rok som robila v IT start-upe, bolo
+              to veľmi inšpiratívne a osviežujúce.
+            </p>
+            <p className="mb-6">
+              Profesionálne sa venujem finančnému riadeniu. Viem manažovať
+              financie neziskovej organizácie a niesť zodpovednosť za splnenie
+              všetkých legislatívnych povinností. Poznám výzvy a riešenia pre
+              manažment neziskových organizácií, orientujem sa vo fundraisingu
+              a mám mnohoročné skúsenosti z oblasti manažmentu neziskoviek.
+              Svoje skúsenosti odovzdávam v súčasnosti ďalej ako konzultant.
+            </p>
+            <p>
+              Chcem inšpirovať a učiť ľudí. Odovzdať čo viem, vysvetliť, aby
+              tomu rozumeli aj iní. Aj vo financiách aj v manažmente
+              neziskoviek, aj v pozitívnom pohľade na svet. Chcem medzi ľuďmi
+              šíriť hodnotný a inšpiratívny obsah. Aby sme videli, že sa veci
+              dajú a pridali sa svojimi aktivitami tam, kde nás to baví.
             </p>
           </div>
         </div>

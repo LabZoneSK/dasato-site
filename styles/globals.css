@@ -6,6 +6,10 @@ html {
     @apply bg-background;
 }
 
+a {
+    @apply cursor-pointer;
+}
+
 .text-h1 {
     @apply text-6xl font-display leading-heading-extra;
 }
