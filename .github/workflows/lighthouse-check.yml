@@ -1,0 +1,30 @@
+name: Lighthouse
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install
+        run: |
+          npx yarn install --immutable --immutable-cache --check-cache
+      - name: Build
+        run: |
+          npx yarn build
+      - name: Waiting for 200 from the Netlify Preview
+        uses: josephduffy/wait-for-netlify-action@v1
+        id: wait-for-netflify-preview
+        with:
+          site_name: "resonant-smakager-8725bc"
+      - name: Lighthouse CI
+        run: |
+          npx yarn global add @lhci/cli@0.3.x
+          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
