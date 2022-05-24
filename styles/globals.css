@@ -17,3 +17,7 @@ a {
 .text-h2 {
     @apply text-4xl font-display leading-heading;
 }
+
+.text-h3 {
+    @apply text-2xl font-display leading-heading;
+}

@@ -107,13 +107,16 @@ export default function Home() {
             ako sú financované. Tiež ľudia z nezisku, ktorí sa zaujímajú o iné
             podobné inšpiratívne projekty (nielen) z ich sektora.
           </p>
-          <h2 className="text-h2">Ako nájsť financie na svoj projekt?</h2>
-          <p className="mt-6 mb-28">
-            Ľudia pracujúci vo firmách, alebo vo verejnej správe, ktorí majú
-            záujem o inšpiratívne a pozitívne príbehy. Verejnosť, ktorá nepozná
-            prácu neziskových organizácií, nevie ako fungujú, čo vlastne robia,
-            ako sú financované. Tiež ľudia z nezisku, ktorí sa zaujímajú o iné
-            podobné inšpiratívne projekty (nielen) z ich sektora.
+          <h2 className="text-h2">Prečo robím DÁSATO?</h2>
+          <p className="mt-6 mb-12">
+            Reláciu som sa rozhodla svojpomocne tvoriť preto, že ma trápila
+            skepsa a nedôvera v spoločnosti, v bežných ľuďoch okolo mňa. Keďže
+            robím vyše 20 rokov v nezisku (ako finančná riaditeľka vo viacerých
+            organizáciách) poznám osobne veľmi veľa ľudí, ktorí robia mnoho
+            fantastických vecí, ktoré zlepšujú svet. Rozhodla som sa ich
+            inšpiratívne príbehy šíriť pre verejnosť. Už teraz mám spätné väzby
+            od poslucháčov o tom, ako príbehy z DÁSATO inšpirujú a nabádajú ku
+            aktivite.
           </p>
           <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
           <ListPlatforms />
@@ -129,7 +132,7 @@ export default function Home() {
             />
           </div>
           <div className="pl-20">
-            <h2 className="text-h2">O Gabike Zubríkovej</h2>
+            <h2 className="text-h2">O Gabike Zúbrikovej</h2>
             <p className="my-6">
               Viac ako 20 rokov pracujem ako finančníčka v neziskovom svete,
               poznám ľudí z pomáhajúceho sektora a poznám výsledky roboty
@@ -161,6 +164,29 @@ export default function Home() {
               šíriť hodnotný a inšpiratívny obsah. Aby sme videli, že sa veci
               dajú a pridali sa svojimi aktivitami tam, kde nás to baví.
             </p>
+
+            <h3 className="text-h3 mt-6">Rozhovory</h3>
+            <a href="https://dennikn.sk/1696974/gabika-zubrikova-chcete-sa-citit-stastni-pomahajte-inym/">
+              <div className="flex flex-row items-center space-x-4">
+                <Image
+                  src="/images/DennikN.png"
+                  alt=""
+                  width={68}
+                  height={68}
+                />
+                <p className="font-bold text-2x-l">
+                  Gabika Zúbriková: Chcete sa cítiť šťastní? Pomáhajte iným
+                </p>
+                <div className="relative">
+                  <Image
+                    src="/images/chevron.png"
+                    alt=""
+                    width={14}
+                    height={14}
+                  />
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

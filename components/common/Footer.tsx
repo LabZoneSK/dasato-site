@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type FooterProps = {};
 
@@ -26,6 +27,46 @@ export default function Footer({}: FooterProps) {
           </div>
           <div className="pl-20">
             <h2 className="text-h2">Sledujte DÁSATO</h2>
+            <div className="mt-8 flex flex-row justify-between items-center w-full">
+              <a href="https://spoti.fi/3D1lvb6" className="w-[38px]">
+                <Image
+                  src="/images/spotify-no-text.png"
+                  width={38}
+                  height={38}
+                  layout="responsive"
+                />
+              </a>
+              <a href="https://apple.co/3wt7a4O" className="w-[38px]">
+                <Image
+                  src="/images/Apple-podcasts.png"
+                  width={38}
+                  height={38}
+                  layout="responsive"
+                />
+              </a>
+
+              <a href="https://bit.ly/3KWBGcK" className="w-[46px]">
+                <Image
+                  src="/images/Goole-podcasts.png"
+                  width={46}
+                  height={37}
+                  layout="responsive"
+                />
+              </a>
+              <a href="https://bit.ly/DASATO">
+                <Image
+                  src="/images/Youtube-no-text.png"
+                  width={41}
+                  height={28}
+                />
+              </a>
+              <a href="https://bit.ly/DASATO">
+                <Image src="/images/Instagram.png" width={36} height={36} />
+              </a>
+              <a href="https://bit.ly/DASATO">
+                <Image src="/images/Facebook.png" width={56} height={56} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
