@@ -21,3 +21,6 @@ a {
 .text-h3 {
     @apply text-2xl font-display leading-heading;
 }
+.text-h5 {
+    @apply text-xl font-display;
+}
