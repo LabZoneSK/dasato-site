@@ -12,6 +12,7 @@ export default function ListPlatforms({}: Props) {
           width={90}
           height={30}
           layout="responsive"
+          alt="Apple Podcasts logo"
         />
       </a>
       <a href="https://spoti.fi/3D1lvb6" className="w-[90px]">
@@ -20,6 +21,7 @@ export default function ListPlatforms({}: Props) {
           width={90}
           height={30}
           layout="responsive"
+          alt="Logo Spotify"
         />
       </a>
       <a href="https://bit.ly/3KWBGcK" className="w-[120px]">
@@ -28,10 +30,16 @@ export default function ListPlatforms({}: Props) {
           width={162}
           height={26}
           layout="responsive"
+          alt="Logo Google Podcast"
         />
       </a>
       <a href="https://bit.ly/DASATO">
-        <Image src="/images/youtube.png" width={91} height={19} />
+        <Image
+          src="/images/youtube.png"
+          width={91}
+          height={19}
+          alt="Logo Youtube"
+        />
       </a>
     </div>
   );

@@ -26,6 +26,7 @@ module.exports = {
         "dark-blue": {
           DEFAULT: "#12186E",
           900: "#363547",
+          800: "#2C2A3A",
         },
       },
       lineHeight: {

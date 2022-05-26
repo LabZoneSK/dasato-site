@@ -2,8 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 
 import ListPlatforms from "../components/podcast/ListPlatforms";
+import EpisodesWidget from "../components/podcast/EpisodesWidget";
 
-export default function Home() {
+type IndexProps = {};
+
+export default function Home({}: IndexProps) {
   return (
     <>
       <Head>
@@ -18,10 +21,24 @@ export default function Home() {
             <h1 className="text-h1 mb-5">
               Rozhovory s ľuďmi, ktorí dokázali, že sa to DÁ.
             </h1>
-            <p className="text-3xl font-light leading-40 mb-20">
+            <p className="text-3xl font-light leading-40 mb-12">
               Inšpirácie a praktické návody, ako obyčajní ľudia dokážu
               neobyčajné veci.
             </p>
+            <div className="flex flex-row space-x-6 mb-12 self-start text-xl">
+              <a
+                href="#aktualny"
+                className="block py-6 px-12 bg-red text-white rounded text-medium"
+              >
+                Vypočuť najnovší diel
+              </a>
+              <a
+                href="#epizody"
+                className="block py-6 px-12 bg-dark-blue-800 text-white rounded text-medium"
+              >
+                Všetky epizódy
+              </a>
+            </div>
             <ListPlatforms />
           </div>
           <div className="pl-20">
@@ -189,6 +206,8 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <EpisodesWidget />
       </div>
     </>
   );
