@@ -23,7 +23,9 @@ export default function Footer({}: FooterProps) {
               </div>
               <div>
                 <span className="block font-bold">LinkedIn</span>
-                <span>Gabika Zubrikova</span>
+                <a href="https://www.linkedin.com/in/gabika-zubrikova-147a6363/">
+                  Gabika Zúbriková
+                </a>
               </div>
             </div>
           </div>
