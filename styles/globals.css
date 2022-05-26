@@ -11,11 +11,11 @@ a {
 }
 
 .text-h1 {
-    @apply text-6xl font-display leading-heading-extra;
+    @apply text-4xl md:text-6xl font-display leading-relaxed md:leading-heading-extra;
 }
 
 .text-h2 {
-    @apply text-4xl font-display leading-heading;
+    @apply text-4xl font-display leading-10 md:leading-heading;
 }
 
 .text-h3 {

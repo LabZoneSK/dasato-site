@@ -24,7 +24,7 @@ export default function EpisodesWidget({}: Props) {
   };
 
   return (
-    <div id="epizody" className="grid grid-cols-2 mt-28">
+    <div id="epizody" className="grid md:grid-cols-2 mt-28">
       <div>
         <h2 className="text-h2 mb-6">Epizódy DÁSATO</h2>
         {actualTrack && (
@@ -50,7 +50,7 @@ export default function EpisodesWidget({}: Props) {
           </>
         )}
       </div>
-      <div className="pl-20 pt-9">
+      <div className="md:pl-20 pt-9">
         <h3 className="text-h3 mt-6">Všetky epizódy</h3>
         <ListOfTracks episodes={episodes} clickHandler={changeActualTrack} />
       </div>

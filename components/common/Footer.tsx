@@ -7,12 +7,12 @@ export default function Footer({}: FooterProps) {
   return (
     <footer>
       <div className="bg-dark-blue-900 text-white">
-        <div className="container py-28 grid grid-cols-2">
+        <div className="container py-12 md:py-28 md:grid grid-cols-2">
           <div>
             <h2 id="kontakt" className="text-h2">
               Kontaktujte ma
             </h2>
-            <div className="mt-8 flex flex-row justify-between">
+            <div className="mt-8 flex flex-col space-y-6 md:flex-row justify-between">
               <div>
                 <span className="block font-bold">Telefon</span>
                 <span>0917 429 982</span>
@@ -29,7 +29,7 @@ export default function Footer({}: FooterProps) {
               </div>
             </div>
           </div>
-          <div className="pl-20">
+          <div className="mt-12 md:mt-0 md:pl-20">
             <h2 className="text-h2">Sledujte DÁSATO</h2>
             <div className="mt-8 flex flex-row justify-between items-center w-full">
               <a href="https://spoti.fi/3D1lvb6" className="w-[38px]">
