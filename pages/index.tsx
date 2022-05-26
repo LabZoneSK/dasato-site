@@ -15,17 +15,17 @@ export default function Home({}: IndexProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container py-28">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col items-center justify-center">
+      <div className="container py-12 md:py-28">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col items-center justify-center md:order-last">
             <h1 className="text-h1 mb-5">
               Rozhovory s ľuďmi, ktorí dokázali, že sa to DÁ.
             </h1>
-            <p className="text-3xl font-light leading-40 mb-12">
+            <p className="text-2xl md:text-3xl font-light leading-40 mb-12">
               Inšpirácie a praktické návody, ako obyčajní ľudia dokážu
               neobyčajné veci.
             </p>
-            <div className="flex flex-row space-x-6 mb-12 self-start text-xl">
+            <div className="flex flex-col md:flex-row space-y-6 md:space-x-6 mb-12 self-start text-xl">
               <a
                 href="#aktualny"
                 className="block py-6 px-12 bg-red text-white rounded text-medium"
@@ -41,7 +41,7 @@ export default function Home({}: IndexProps) {
             </div>
             <ListPlatforms />
           </div>
-          <div className="pl-20">
+          <div className="hidden md: block pl-20">
             <Image
               src="/images/cover-photo.jpg"
               alt="Logo Dasato Svet podla Gabiky"
@@ -51,7 +51,7 @@ export default function Home({}: IndexProps) {
           </div>
         </div>
 
-        <div id="o-projekte" className="grid grid-cols-2 mt-28">
+        <div id="o-projekte" className="grid grid-col-1 md:grid-cols-2 mt-28">
           <div>
             <Image
               src="/images/o-projekte.jpg"
@@ -60,8 +60,8 @@ export default function Home({}: IndexProps) {
               height={457}
             />
           </div>
-          <div className="pl-20 flex flex-col justify-center">
-            <h2 className="text-h2">O projekte DÁSATO</h2>
+          <div className="md:pl-20 flex flex-col justify-center">
+            <h2 className="text-h2 mt-6 md:mt-0">O projekte DÁSATO</h2>
             <p className="my-6">
               Relácia prináša rozhovory s ľuďmi, ktorí dokázali že sa DÁ, to, čo
               sa zvyčajne považuje za nemožné, alebo len veľmi ťažké. Vypočuj si
@@ -82,14 +82,14 @@ export default function Home({}: IndexProps) {
         </div>
       </div>
       <div className="bg-green">
-        <div className="container py-20">
-          <div className="grid grid-cols-3">
-            <div className="text-h2 text-white">
+        <div className="container py-12 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="text-h2 text-white mb-12 md:mb-0">
               20 rozhovorov
               <br />
               ročne
             </div>
-            <div className="text-h2 text-white">
+            <div className="text-h2 text-white mb-12 md:mb-0">
               Významní
               <br />
               hostia
@@ -105,11 +105,11 @@ export default function Home({}: IndexProps) {
           src={`/images/highlights.svg`}
           width={1542}
           height={70}
-          className="mx-auto"
+          className="mx-auto w-full"
         />
       </div>
       <div className="container py-20">
-        <div className="w-2/3">
+        <div className="md:w-2/3">
           <h2 className="text-h2">Kto sú hostia Podcastu</h2>
           <p className="mt-6 mb-12">
             Relácia DÁSATO prináša ročne dvasiatku rozhovorov so zaujímavými
@@ -139,7 +139,7 @@ export default function Home({}: IndexProps) {
           <ListPlatforms />
         </div>
 
-        <div id="o-gabike" className="grid grid-cols-2 mt-28">
+        <div id="o-gabike" className="grid md:grid-cols-2 mt-28">
           <div className="flex flex-col justify-center">
             <Image
               src="/images/gabika-DASATO.jpg"
@@ -148,7 +148,7 @@ export default function Home({}: IndexProps) {
               height={658}
             />
           </div>
-          <div className="pl-20">
+          <div className="mt-6 md:mt-0 md:pl-20">
             <h2 className="text-h2">O Gabike Zúbrikovej</h2>
             <p className="my-6">
               Viac ako 20 rokov pracujem ako finančníčka v neziskovom svete,
