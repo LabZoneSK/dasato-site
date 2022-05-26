@@ -42,6 +42,7 @@ export default function EpisodesWidget({}: Props) {
             <a
               href="https://www.facebook.com/dasato.svet/"
               target="_blank"
+              rel="noreferrer"
               className="block mt-6 text-red"
             >
               &gt; Vypočuť si celú epizódu na Spotify
