@@ -30,6 +30,16 @@ export default function Header({}: HeaderProps) {
             O Gabike
           </a>
         </li>
+        <li>
+          <a className="px-3 py-2 rounded-lg" href="#epizody">
+            Epizódy
+          </a>
+        </li>
+        <li>
+          <a className="px-3 py-2 rounded-lg" href="#kontakt">
+            Kontakt
+          </a>
+        </li>
       </ul>
     </nav>
   );

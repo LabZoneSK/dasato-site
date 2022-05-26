@@ -9,7 +9,9 @@ export default function Footer({}: FooterProps) {
       <div className="bg-dark-blue-900 text-white">
         <div className="container py-28 grid grid-cols-2">
           <div>
-            <h2 className="text-h2">Kontaktujte ma</h2>
+            <h2 id="kontakt" className="text-h2">
+              Kontaktujte ma
+            </h2>
             <div className="mt-8 flex flex-row justify-between">
               <div>
                 <span className="block font-bold">Telefon</span>
