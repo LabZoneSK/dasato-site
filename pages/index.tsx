@@ -148,6 +148,7 @@ export default function Home({}: IndexProps) {
               alt=""
               width={533}
               height={658}
+              layout="responsive"
             />
           </div>
           <div className="mt-6 md:mt-0 md:pl-20">
