@@ -17,7 +17,7 @@ export default function Home({}: IndexProps) {
 
       <div className="container py-12 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col items-center justify-center md:order-last">
+          <div className="flex flex-col items-center justify-center order-last md:order-first">
             <h1 className="text-h1 mb-5">
               Rozhovory s ľuďmi, ktorí dokázali, že sa to DÁ.
             </h1>
@@ -25,7 +25,7 @@ export default function Home({}: IndexProps) {
               Inšpirácie a praktické návody, ako obyčajní ľudia dokážu
               neobyčajné veci.
             </p>
-            <div className="flex flex-col md:flex-row space-y-6 md:space-x-6 mb-12 self-start text-xl">
+            <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 mb-12 self-start text-xl">
               <a
                 href="#aktualny"
                 className="block py-6 px-12 bg-red text-white rounded text-medium"
@@ -41,7 +41,7 @@ export default function Home({}: IndexProps) {
             </div>
             <ListPlatforms />
           </div>
-          <div className="hidden md: block pl-20">
+          <div className="hidden md:block pl-20">
             <Image
               src="/images/cover-photo.jpg"
               alt="Logo Dasato Svet podla Gabiky"
@@ -135,8 +135,10 @@ export default function Home({}: IndexProps) {
             od poslucháčov o tom, ako príbehy z DÁSATO inšpirujú a nabádajú ku
             aktivite.
           </p>
-          <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
-          <ListPlatforms />
+          <div className="hidden md:block">
+            <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
+            <ListPlatforms />
+          </div>
         </div>
 
         <div id="o-gabike" className="grid md:grid-cols-2 mt-28">
@@ -146,6 +148,7 @@ export default function Home({}: IndexProps) {
               alt=""
               width={533}
               height={658}
+              layout="responsive"
             />
           </div>
           <div className="mt-6 md:mt-0 md:pl-20">

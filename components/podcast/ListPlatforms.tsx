@@ -39,8 +39,8 @@ export default function ListPlatforms({}: Props) {
       <a href="https://bit.ly/DASATO" className="w-36 mt-6 md:mt-0">
         <Image
           src="/images/youtube.png"
-          width={91}
-          height={19}
+          width={794}
+          height={178}
           alt="Logo Youtube"
           layout="responsive"
         />

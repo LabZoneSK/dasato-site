@@ -19,7 +19,7 @@ export default function Header({}: HeaderProps) {
       </Link>
 
       <ul className="flex items-center space-x-2 text-sm font-medium text-gray-500">
-        <li className="hidden lg:block">
+        <li>
           <a className="px-3 py-2 rounded-lg" href="#o-projekte">
             O projekte
           </a>
