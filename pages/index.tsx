@@ -135,8 +135,10 @@ export default function Home({}: IndexProps) {
             od poslucháčov o tom, ako príbehy z DÁSATO inšpirujú a nabádajú ku
             aktivite.
           </p>
-          <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
-          <ListPlatforms />
+          <div className="hidden md:block">
+            <h2 className="text-h2">Kde všade si DÁSATO vypočujete?</h2>
+            <ListPlatforms />
+          </div>
         </div>
 
         <div id="o-gabike" className="grid md:grid-cols-2 mt-28">

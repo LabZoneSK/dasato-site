@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import ListOfTracks from "./ListOfTracks";
+import ListPlatforms from "components/podcast/ListPlatforms";
+
 type Props = {};
 
 export default function EpisodesWidget({}: Props) {
@@ -53,6 +55,10 @@ export default function EpisodesWidget({}: Props) {
       <div className="md:pl-20 pt-9">
         <h3 className="text-h3 mt-6">Všetky epizódy</h3>
         <ListOfTracks episodes={episodes} clickHandler={changeActualTrack} />
+        <div className="block md:hidden">
+          <h2 className="text-h3 mt-6">Kde všade si DÁSATO vypočujete?</h2>
+          <ListPlatforms />
+        </div>
       </div>
     </div>
   );
