@@ -6,7 +6,7 @@ type Props = {};
 export default function EpisodesWidget({}: Props) {
   const [episodes, setEpisodes] = useState([]);
   const [actualTrack, setActualTrack] = useState<any>({});
-  const videoTag = useRef<HTMLVideoElement>(null);
+  const videoTag = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     fetch("/api/episodes/7t0pb8A14v87CTvIWZS6PB")
@@ -31,9 +31,9 @@ export default function EpisodesWidget({}: Props) {
           <>
             <div id="aktualny" className="bg-green rounded p-6 mb-6">
               <h3 className="text-h5 text-white h-1">{actualTrack.title}</h3>
-              <video controls className="-mt-8" ref={videoTag}>
+              <audio controls className="mt-24" ref={videoTag}>
                 <source src={actualTrack.audio_preview_url} type="audio/mpeg" />
-              </video>
+              </audio>
             </div>
             <div
               dangerouslySetInnerHTML={{ __html: actualTrack.html_description }}
