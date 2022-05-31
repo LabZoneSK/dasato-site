@@ -38,6 +38,7 @@ export default function Footer({}: FooterProps) {
                   width={38}
                   height={38}
                   layout="responsive"
+                  alt="Spotify logo"
                 />
               </a>
               <a href="https://apple.co/3wt7a4O" className="w-[38px]">
@@ -46,6 +47,7 @@ export default function Footer({}: FooterProps) {
                   width={38}
                   height={38}
                   layout="responsive"
+                  alt="Apple Podcasts logo"
                 />
               </a>
 
@@ -55,6 +57,7 @@ export default function Footer({}: FooterProps) {
                   width={46}
                   height={37}
                   layout="responsive"
+                  alt="Google Podcasts logo"
                 />
               </a>
               <a href="https://bit.ly/DASATO">
@@ -62,13 +65,25 @@ export default function Footer({}: FooterProps) {
                   src="/images/Youtube-no-text.png"
                   width={41}
                   height={28}
+                  layout="responsive"
+                  alt="Youtube logo"
                 />
               </a>
               <a href="https://bit.ly/DASATO">
-                <Image src="/images/Instagram.png" width={36} height={36} />
+                <Image
+                  src="/images/Instagram.png"
+                  width={36}
+                  height={36}
+                  alt="Instagram logo"
+                />
               </a>
               <a href="https://bit.ly/DASATO">
-                <Image src="/images/Facebook.png" width={56} height={56} />
+                <Image
+                  src="/images/Facebook.png"
+                  width={56}
+                  height={56}
+                  alt="Facebook logo"
+                />
               </a>
             </div>
           </div>

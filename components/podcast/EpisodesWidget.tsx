@@ -17,7 +17,8 @@ export default function EpisodesWidget({}: Props) {
         setEpisodes(data.episodes);
         setActualTrack(data.episodes[0]);
         videoTag?.current?.load();
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   const changeActualTrack = (track: any) => {

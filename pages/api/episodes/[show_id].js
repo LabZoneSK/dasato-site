@@ -1,6 +1,6 @@
 import { getEpisodes } from "../../../lib/spotify";
 
-export default async (req, res) => {
+const getShowEpisodes = async (req, res) => {
   const { show_id } = req.query;
   const response = await getEpisodes(show_id);
   const { items } = await response.json();
@@ -17,3 +17,5 @@ export default async (req, res) => {
 
   return res.status(200).json({ episodes });
 };
+
+export default getShowEpisodes;

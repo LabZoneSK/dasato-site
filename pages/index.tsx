@@ -106,6 +106,7 @@ export default function Home({}: IndexProps) {
           width={1542}
           height={70}
           className="mx-auto w-full"
+          alt=""
         />
       </div>
       <div className="container py-20">
