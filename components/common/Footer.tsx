@@ -89,8 +89,11 @@ export default function Footer({}: FooterProps) {
           </div>
         </div>
       </div>
-      <div className="container py-6">
+      <div className="container py-6 flex flex-row items-center">
         <div>© 2022 DÁSATO - Svet podľa Gabiky</div>
+        <div className="grow text-right text-sm text-zinc-400">
+          Made with ❤️ <a href="https://labzone.tech"> LabZone</a>
+        </div>
       </div>
     </footer>
   );
