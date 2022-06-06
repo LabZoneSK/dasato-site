@@ -3,24 +3,29 @@
 @tailwind utilities;
 
 html {
-    @apply bg-background;
+  @apply bg-background;
 }
 
 a {
-    @apply cursor-pointer;
+  @apply cursor-pointer;
 }
 
 .text-h1 {
-    @apply text-4xl md:text-6xl font-display leading-relaxed md:leading-heading-extra;
+  @apply text-4xl md:text-6xl font-display leading-relaxed md:leading-heading-extra;
 }
 
 .text-h2 {
-    @apply text-4xl font-display leading-10 md:leading-heading;
+  @apply text-4xl font-display leading-10 md:leading-heading;
 }
 
 .text-h3 {
-    @apply text-2xl font-display leading-heading;
+  @apply text-2xl font-display leading-heading;
 }
 .text-h5 {
-    @apply text-xl font-display;
+  @apply text-xl font-display;
+}
+
+.menu-items a,
+a {
+  @apply hover:underline underline-offset-8 decoration-2;
 }
